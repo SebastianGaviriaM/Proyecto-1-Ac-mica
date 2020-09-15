@@ -1,0 +1,130 @@
+nav{
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    ul{
+        display: none;
+        position: absolute;
+        top:44px;
+        
+        
+        width: 100%;
+        list-style:none;
+                    
+    }
+
+    #burger-open{
+        display: none;
+    }
+
+    #chk-nav-bar{
+        display:none;
+    }
+
+    #chk-nav-bar:checked ~ #burger-close{
+        display:none;
+    }
+    #chk-nav-bar:checked ~ #burger-open{
+        display: block;
+    }
+    #chk-nav-bar:checked ~ ul{
+        display: flex;
+        flex-direction: column; 
+        left: 0;
+        
+    }
+    .list-item{       
+        display: flex; 
+        width: 100%;
+        height: 56px;
+        background-color: blue;  
+        font-size: 16px;
+        padding: 16px 20px 8px 16px;
+        
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .list-item:last-child{
+        padding-bottom: 24px;
+    }
+
+
+    }
+    .menu-item{
+        display: flex;
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 300;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        
+        
+        
+        
+        text-decoration: none;
+        color: #ffffff;
+
+        &:hover{
+            color: #00F3BB;
+            text-decoration: line-through;
+        }
+    }
+
+
+
+
+    @media screen and (min-width:850px){
+
+        nav{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 100px;
+
+
+            img{
+                width: 36px;
+            }
+
+            #burger-close, #burger-open{
+                display: none;
+            }
+
+            ul{
+                display: flex;
+                align-items: center;
+                top:0;
+                position: static;
+                width: auto;
+            }
+            .list-item{
+                display: flex;
+                align-items: center;
+                background-color: white;
+                padding: 4px 24px;
+                
+
+
+                .menu-item{
+                    color:#060A24;
+                    font-weight: 400;
+                    &:hover{
+                        color: #00F3BB;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            .list-item:last-child{
+                padding-bottom: 4px;
+            } 
+        }
+
+
+        
+    }
+
+

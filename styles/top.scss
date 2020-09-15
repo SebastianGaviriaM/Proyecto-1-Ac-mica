@@ -1,0 +1,66 @@
+.cont-top{
+    padding: 29px 16px 0;
+    
+
+    h1{
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;   
+        .raya{
+            text-decoration: line-through;
+        }     
+    }
+    
+    .p1{
+        padding-top: 16px;
+        font-family:$tipo_mono;
+        font-size: 14px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 22px;    
+    }  
+    .p2{
+        display: none;
+    }
+    button{
+        @extend %button;
+        margin-top: 36px;
+    }
+}
+
+
+@media screen and (min-width:850px){
+    .cont-top{
+        padding: 120px 200px 0;
+
+        h1{
+            font-size: 64px;
+
+            .azul{
+                color: blue;
+            }
+        }
+
+        .p1{
+            display: none;
+        }
+        .p2{
+            padding-top: 20px;
+            display: block;
+            font-family:$tipo_mono;
+            width: 628px;
+            font-size: 16px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 24px;
+        }
+
+        button{
+            margin-top: 56px;
+        }
+       
+    }
+}

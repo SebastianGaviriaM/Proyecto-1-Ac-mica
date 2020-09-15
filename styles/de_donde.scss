@@ -1,0 +1,64 @@
+.cont-dedonde{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -80px;
+    max-height: 810px;
+
+
+    h2{
+        font-family: $tipo_sans;
+        font-weight: 400;
+        font-size: 36px;
+        color: #060A24;
+        letter-spacing: 0;
+        line-height: 42px;
+        
+    }
+    .de_donde{
+
+        width: 288px;
+        padding: 27px auto 0;
+        padding-top: 27px;
+        
+
+        p{
+            font-family: $tipo_mono;
+            font-size: 14px;
+            color: #060A24;
+            letter-spacing: 0;
+            line-height: 22px;
+            padding-top: 8px;
+        }
+       
+    }
+}
+
+@media screen and (min-width:850px){
+    .cont-dedonde{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 200px;
+        padding-right: 256px;
+
+        img{
+            width: 457px;
+            
+        }
+
+        .de_donde{
+            min-width: 464px;
+
+            h2{
+                width: 399px;
+                padding-top: 25px;
+            }
+
+            p{
+                font-size: 16px;
+                padding-top: 16px;
+            }
+        }
+    }
+}
